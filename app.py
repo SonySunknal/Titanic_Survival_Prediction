@@ -5,7 +5,8 @@ import joblib
 st.set_page_config(page_title="Titanic Survival Predictor", layout="centered")
 
 @st.cache_resource
-def load_model(path="models/titanic_pipe.joblib"):
+def load_model():
+    path = os.path.join("models", "titanic_pipe.joblib")
     return joblib.load(path)
 
 model = load_model()
