@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os 
 
 st.set_page_config(page_title="Titanic Survival Predictor", layout="centered")
 
